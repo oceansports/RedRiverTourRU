@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Red River Tour — Фукуок / Phu Quoc</title>
+<meta name="description" content="Морские туры, экскурсии, шоу и яхты на Фукуоке. Русскоговорящие гиды. Phu Quoc tours with Russian-speaking guides.">
+<style>
+:root{--y:#fab71b;--yl:#fff3cf;--n:#14407f;--o:#e8590c;--t:#1c2540;--g:#2e9d57}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--t);background:#fffaf0;padding-bottom:72px}
+header{position:sticky;top:0;z-index:20;background:var(--y);display:flex;align-items:center;gap:10px;padding:6px 12px}
+header img{height:44px;border-radius:6px}header nav{margin-left:auto;display:flex;gap:6px}
+.lg{border:2px solid var(--n);background:none;color:var(--n);font-weight:700;border-radius:20px;padding:4px 12px;cursor:pointer}.lg.on{background:var(--n);color:#fff}
+.hero{position:relative;color:#fff;text-align:center;padding:64px 16px 48px;background:linear-gradient(#0a2a5acc,#0a2a5a99),url(images/hero.jpg) center/cover}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,6vw,44px);line-height:1.15}.hero p{margin:6px auto;max-width:640px}
+.badge{display:inline-block;background:#fff;color:var(--n);font-weight:700;border-radius:20px;padding:4px 12px;font-size:14px;margin-top:8px}
+.btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.b{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:26px;color:#fff;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.call{background:var(--n)}.zalo{background:#0068ff}.wa{background:#25a244}.shop{background:var(--y);color:#222}
+main{max-width:1100px;margin:auto;padding:0 14px}h2{color:var(--n);margin:32px 0 10px;font-size:26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.chip{border:2px solid var(--n);background:#fff;color:var(--n);border-radius:20px;padding:6px 14px;cursor:pointer;font-weight:600}.chip.on{background:var(--n);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px #0002;display:flex;flex-direction:column}
+.card img{width:100%;height:170px;object-fit:cover}.cb{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cb h3{margin:0;color:var(--n);font-size:18px;line-height:1.25}.tm{color:var(--o);font-weight:700;font-size:14px}.ds{font-size:14px;margin:0}
+.inc{font-size:13px;color:#444;background:var(--yl);border-radius:8px;padding:6px 8px}
+.pr{display:flex;gap:10px;margin-top:auto}.pr div{flex:1;background:var(--yl);border-radius:10px;text-align:center;padding:6px}.pr small{display:block;font-size:12px;color:#555}.pr b{font-size:22px;color:var(--o)}
+.card .b{justify-content:center;font-size:14px;padding:8px}
+.note{background:#fff;border-left:5px solid var(--o);padding:10px 14px;border-radius:8px;font-size:14px;margin-top:14px}
+.gal{position:relative;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:16/9;max-height:520px}.gal img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.gal button{position:absolute;top:50%;transform:translateY(-50%);background:#0008;color:#fff;border:0;font-size:28px;width:44px;height:56px;cursor:pointer}.gal .pv{left:0}.gal .nx{right:0}
+.zoom{position:fixed;inset:0;background:#000d;z-index:50;display:none;align-items:center;justify-content:center;cursor:zoom-out}.zoom img{max-width:96vw;max-height:94vh}
+.pay{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#fff;border-radius:14px;padding:14px;box-shadow:0 2px 10px #0002}.pay img{height:90px}
+.ad{background:#0d1b2e;color:#fff;border:3px solid var(--y);border-radius:16px;padding:20px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:32px}
+.ad .pc{font-size:44px;font-weight:800;color:var(--y);line-height:1}.ad p{margin:4px 0}
+.qr{text-align:center;margin:32px 0}.qr img{width:170px;border-radius:10px;background:#fff;padding:6px}
+footer{background:var(--n);color:#fff;text-align:center;padding:22px 14px;font-size:14px}footer a{color:var(--y)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:6px;padding:8px;background:#fffffff2;box-shadow:0 -2px 10px #0003}.bar .b{flex:1;justify-content:center;padding:10px 4px;font-size:15px}
+</style>
+</head>
+<body>
+<header><img src="images/logo.png" alt="RedRiverTour"><nav><button class="lg" data-l="ru">RU</button><button class="lg" data-l="en">EN</button></nav></header>
+<section class="hero">
+<h1 data-i="h1"></h1><p data-i="h2"></p><p data-i="h3"></p>
+<span class="badge">Tripadvisor Travelers' Choice 2025</span>
+<div class="btns" id="heroBtns"></div>
+</section>
+<main>
+<h2 data-i="tt"></h2>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<div class="note" data-i="n1"></div>
+<h2 data-i="gt"></h2>
+<div class="gal"><img id="gi" alt=""><button class="pv" aria-label="prev">‹</button><button class="nx" aria-label="next">›</button></div>
+<h2 data-i="pt"></h2>
+<div class="pay"><img src="images/payments.png" alt="Visa Mastercard PayPal"><div data-i="pd"></div></div>
+<div class="ad"><div class="pc" data-i="ad0"></div><div style="flex:1;min-width:220px"><b data-i="ad1"></b><p data-i="ad2"></p><p data-i="ad3"></p></div><a class="b shop" id="shopBtn" href="https://www.oceansportsvn.com" target="_blank" rel="noopener" data-i="ad4"></a></div>
+<div class="qr"><img src="qr-redriverdc.png" alt="QR" onerror="this.parentNode.style.display='none'"><p data-i="qr"></p></div>
+</main>
+<footer><div>RedRiverTour — The Leading Tour Operator in Phu Quoc</div><div>WhatsApp: <a href="https://wa.me/84931032886">+84 93 103 2886</a> · <a href="mailto:booking@redrivertours.com.vn">booking@redrivertours.com.vn</a></div><div><a href="https://redrivertours.com.vn/russian-tour/" target="_blank" rel="noopener">redrivertours.com.vn</a></div></footer>
+<div class="bar" id="bar"></div>
+<div class="zoom" id="zoom"><img alt=""></div>
+<script>
+// Вставьте сюда ссылку Web App (…/exec) из Google Apps Script. Пока пусто — клики не считаются.
+const TRACK_URL = "https://script.google.com/macros/s/AKfycbzW_WvEA93x-V01ah_UHRTQS1A-sDfUk8AWM11Kn4F-WsYQjTPx1vCScWW85h7ITfoxRg/exec";
+const PHONE="+84931032886",WA="https://wa.me/84931032886",ZALO="https://zalo.me/84931032886",SHOP="https://www.oceansportsvn.com";
+const U={
+ru:{h1:"Проведите свой отпуск с нами!",h2:"Специальное предложение — скидки на самые популярные морские туры!",h3:"Снорклинг, скоростные катера и райские острова Южного архипелага Фукуока. Русскоговорящие гиды.",tt:"Туры и экскурсии",gt:"Фотогалерея",pt:"Оплата",pd:"Принимаем карты Visa, Mastercard и PayPal. Для бронирования свяжитесь с менеджером компании.",call:"Позвонить",zalo:"Zalo",wa:"WhatsApp",adult:"Взрослый",child:"Детский (100–139 см)",inc:"Включено: ",book:"Забронировать",all:"Все",n1:"Цены указаны в USD. Детский тариф — рост 100–139 см. Доплата за трансфер из отелей на юге острова на северных турах — 5 USD/чел. (для отелей на севере — скидка 5 USD/чел.). Яхта: доплата за трансфер из отелей на севере — 100 000 VND/чел. Очень популярные туры лучше бронировать заранее.",ad0:"-10%",ad1:"Ocean Sports — магазины для дайвинга",ad2:"Нячанг · Фукуок · Куинён",ad3:"Скидка 10% для гостей Red River Tour.",ad4:"Посмотреть магазины",qr:"Отсканируйте QR-код, чтобы открыть эту страницу на телефоне.",cats:{sea:"Море",land:"Экскурсии",show:"Шоу",yacht:"Яхта"}},
+en:{h1:"Spend your holiday with us!",h2:"Special offer — discounts on the most popular sea tours!",h3:"Snorkeling, speedboats and paradise islands of Phu Quoc's southern archipelago. Russian-speaking guides.",tt:"Tours & excursions",gt:"Photo gallery",pt:"Payment",pd:"We accept Visa, Mastercard and PayPal. To book, contact a company manager.",call:"Call",zalo:"Zalo",wa:"WhatsApp",adult:"Adult",child:"Child (100–139 cm)",inc:"Included: ",book:"Book now",all:"All",n1:"Prices in USD. Child rate applies to height 100–139 cm. North tours: +5 USD/person transfer from hotels in the south (5 USD/person discount from hotels in the north). Yacht: +100,000 VND/person transfer from hotels in the north. Popular tours sell out — book ahead.",ad0:"-10%",ad1:"Ocean Sports — diving stores",ad2:"Nha Trang · Phu Quoc · Quy Nhon",ad3:"10% off for Red River Tour guests.",ad4:"View stores",qr:"Scan the QR code to open this page on your phone.",cats:{sea:"Sea",land:"Land tours",show:"Shows",yacht:"Yacht"}}};
+// [код, фото, категория, время, взрослый, детский, {ru:[название, описание, включено], en:[...]}]
+const T=[
+["ISLAND 1","cablecar","sea","08:00–17:00",90,80,{ru:["Полёт на острова с канаткой","Канатная дорога на остров Hon Thom, скоростной катер, обед на острове с пляжем и снорклинг.","полный трансфер, русскоговорящий гид, билет на канатку, спидбот, обед + Cuba Libre, снорклинг"],en:["Flight to the Island","Cable car to Hon Thom, speedboat, lunch on a beach island and snorkeling.","full transfer, Russian-speaking guide, cable car ticket, speedboat, lunch + Cuba Libre, snorkeling"]}],
+["ISLAND 2","beach","sea","08:00–16:00",65,55,{ru:["5 звёздных островов","Катер к островам Kim Quy, May Rut, Gam Ghi: снорклинг среди кораллов, обед на Mong Tay, Ocean World на Hon Roi.","трансфер, гид, обед, вода + Cuba Libre, маска и трубка"],en:["5 Stars Islands","Speedboat to Kim Quy, May Rut and Gam Ghi: snorkeling among corals, lunch on Mong Tay, Ocean World on Hon Roi.","transfer, guide, lunch, water + Cuba Libre, mask and snorkel"]}],
+["ISLAND 3","speedboat","sea","13:00–17:30",95,85,{ru:["Закатный тур","Канатка без толп, снорклинг у Gam Ghi и ужин на берегу моря на закате.","трансфер, гид, билет на канатку, вода + Cuba Libre, снаряжение, ужин"],en:["Sunset Tour","Crowd-free cable car, calm snorkeling at Gam Ghi and dinner on the beach at sunset.","transfer, guide, cable car ticket, water + Cuba Libre, snorkel gear, dinner"]}],
+["R4","hero","sea","05:00–13:30 / 14:30–21:30",90,80,{ru:["Глубоководная рыбалка","Морская рыбалка на большом корабле с эхолотом, остановка для снорклинга.","трансфер, гид, снасти, корабль, завтрак и обед, приготовление улова, Cuba Libre"],en:["Deep-sea fishing","Sea fishing on a large boat with a fish finder, plus a snorkeling stop.","transfer, guide, tackle, boat, breakfast and lunch, cooking your catch, Cuba Libre"]}],
+["R7","speedboat","sea","18:00–22:00",65,55,{ru:["Корабль с барбекю и фейерверком Sunset Town","Вечерняя прогулка с ужином, музыкой, караоке, ловлей кальмаров и салютом.","трансфер, гид, барбекю, салют, местное пиво, ром и напитки, караоке"],en:["Barbecue cruise & Sunset Town fireworks","Evening cruise with dinner, music, karaoke, squid fishing and fireworks.","transfer, guide, barbecue, fireworks, local beer, rum and soft drinks, karaoke"]}],
+["R10","seawalker","sea","10:30–13:30 / 13:30–16:30",65,65,{ru:["Sea Walker — прогулка по дну моря","Прогулка по дну в специальном скафандре, безопасно даже для тех, кто не умеет плавать. Взрослый и детский — 65 USD.","трансфер, лодка, оборудование. Фото 8$, видео 20$, комбо 24$"],en:["Sea Walker — walk on the seabed","Walk the seabed in a special helmet, safe even for non-swimmers. Adult and child — 65 USD.","transfer, boat, equipment. Photos $8, video $20, combo $24"]}],
+["NORTH 1","beach","land","10:00–16:30",40,30,{ru:["Отдых со звездой + круглые лодки","Дикий пляж Rach Vem с морскими звёздами, гамаки, качели, обед в ресторане на воде.","трансфер, гид, лодка, пляж, обед из морепродуктов + Cuba Libre. Basket Boat — +10 USD"],en:["Starfish beach + basket boats","Wild Rach Vem beach with starfish, hammocks, swings, lunch at a restaurant on the water.","transfer, guide, boat, beach, seafood lunch + Cuba Libre. Basket boat — +10 USD"]}],
+["NORTH 3","history","land","09:00–16:00",85,75,{ru:["Дикий север Фукуока","Катер к жемчужной фабрике, река через джунгли, морские звёзды на Rach Vem, обед с морепродуктами.","трансфер, гид, катер, вода, Cuba Libre, билеты, обед"],en:["Wild North of Phu Quoc","Boat to a pearl farm, jungle river trip, starfish at Rach Vem, seafood lunch.","transfer, guide, speedboat, water, Cuba Libre, tickets, lunch"]}],
+["NORTH 2","safari","land","09:00–16:00",85,75,{ru:["Сафари к звёздам","Vinpearl Safari — 150+ видов животных, затем пляж Ham Rong с морскими звёздами и обед.","трансфер, гид, билет в Safari, лодка, пляж, обед из морепродуктов"],en:["Safari to the Stars","Vinpearl Safari — 150+ animal species, then Ham Rong starfish beach and lunch.","transfer, guide, Safari ticket, boat, beach, seafood lunch"]}],
+["SHOW 1","dinhcau","show","16:00–22:00",95,85,{ru:["Грандиозные шоу Sunset Town","Мост поцелуев, Симфония моря, Поцелуй моря, ужин в гастропабе «Бавария».","все билеты, ужин, трансфер"],en:["Sunset Town Grand Shows","Kiss Bridge, Symphony of the Sea, Kiss of the Sea, dinner at the Bavaria gastropub.","all tickets, dinner, transfer"]}],
+["SHOW 2","history","show","13:00–22:00",85,75,{ru:["Шоу Grand World + звёздный пляж","Дикий пляж со звёздами, Grand World, гондолы, «Квинтэссенция Вьетнама» и лазерное шоу.","все билеты, обед, трансфер"],en:["Grand World show + starfish beach","Wild starfish beach, Grand World, gondolas, “Quintessence of Vietnam” and laser show.","all tickets, lunch, transfer"]}],
+["CITY","dinhcau","land","10:00",40,30,{ru:["City тур","Зыонг Донг с местным гидом: храмы Dinh Cau и Dinh Ba, старый порт, рынок, смотровая площадка.","все билеты, обед, трансфер"],en:["City Tour","Duong Dong with a local guide: Dinh Cau and Dinh Ba temples, old port, market, viewpoint.","all tickets, lunch, transfer"]}],
+["SOUTH 1","history","land","09:00–16:30",40,30,{ru:["Сокровища юга","Жемчужная ферма, перец, шёлк, благовония, птичьи гнёзда, тюрьма Фукуок, пагода Ho Quoc, Paradise Beach.","трансфер, гид, билеты, обед, вода. Канатка — за доп. плату"],en:["Treasures of the South","Pearl farm, pepper, silk, incense, bird's nests, Phu Quoc prison, Ho Quoc pagoda, Paradise Beach.","transfer, guide, tickets, lunch, water. Cable car — extra"]}],
+["R2","history","land","09:00–17:30",60,50,{ru:["Через историю о. Фукуок","Обзорный тур: мемориал героя, круглые лодки, лежащий Будда, змеиная ферма, Suoi Tranh, Paradise Beach.","трансфер, гид, обед вьетнамской кухни, вода, билеты"],en:["Through the History of Phu Quoc","Island tour: hero memorial, basket boats, reclining Buddha, snake farm, Suoi Tranh, Paradise Beach.","transfer, guide, Vietnamese lunch, water, tickets"]}],
+["YACHT","yacht","yacht","08:00–14:15",82,72,{ru:["Яхта: дневной тур (5 часов)","Юг Фукуока: Bai Sao, Bai Khem, Hon Dam Trong, SUP, надувная горка, BBQ на лодке.","трансфер, обед, якорная стоянка, сапборд, рыбалка, снорклинг"],en:["Yacht: day tour (5 hours)","South Phu Quoc: Bai Sao, Bai Khem, Hon Dam Trong, SUP, inflatable slide, BBQ on board.","transfer, lunch, anchorage, SUP, fishing, snorkeling"]}],
+["YACHT","yacht","yacht","14:00–20:30",85,75,{ru:["Яхта: тур на закат (5 часов)","Закат у моста Kiss Bridge, барбекю на борту и фейерверк.","трансфер, ужин-барбекю, снорклинг, сапборд, надувная горка"],en:["Yacht: sunset tour (5 hours)","Sunset at Kiss Bridge, barbecue on board and fireworks.","transfer, barbecue dinner, snorkeling, SUP, inflatable slide"]}]];
+const GAL=["hero","beach","cablecar","seawalker","speedboat","safari","dinhcau","history","yacht"];
+let saved="";try{saved=localStorage.getItem("lang")||""}catch(e){}
+let L=(saved=="ru"||saved=="en")?saved:(/^(ru|uk|be|kk)/i.test(navigator.language||"")?"ru":"en"),cat="all",gi=0,gt;
+const $=s=>document.querySelector(s);
+function track(ch,where){if(!TRACK_URL)return;try{fetch(TRACK_URL,{method:"POST",mode:"no-cors",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({channel:ch,where:where,loc:"pq",lang:L,ref:document.referrer||""})})}catch(e){}}
+function btns(w,sh){const u=U[L];return `<a class="b call" href="tel:${PHONE}" data-c="call" data-w="${w}">📞 ${u.call}</a><a class="b zalo" href="${ZALO}" target="_blank" rel="noopener" data-c="zalo" data-w="${w}">Zalo</a><a class="b wa" href="${WA}" target="_blank" rel="noopener" data-c="wa" data-w="${w}">WhatsApp</a>`+(sh?`<a class="b shop" href="${SHOP}" target="_blank" rel="noopener" data-c="shop" data-w="${w}">Ocean Sports</a>`:"")}
+function render(){
+const u=U[L];document.documentElement.lang=L;
+document.querySelectorAll("[data-i]").forEach(e=>e.textContent=u[e.dataset.i]);
+document.querySelectorAll(".lg").forEach(b=>b.classList.toggle("on",b.dataset.l==L));
+$("#heroBtns").innerHTML=btns("hero",false);$("#bar").innerHTML=btns("sticky",false);
+$("#chips").innerHTML=["all","sea","land","show","yacht"].map(c=>`<button class="chip ${c==cat?"on":""}" data-k="${c}">${c=="all"?u.all:u.cats[c]}</button>`).join("");
+$("#grid").innerHTML=T.filter(t=>cat=="all"||t[2]==cat).map(t=>{const x=t[6][L];const same=t[4]==t[5];return `<article class="card"><img src="images/${t[1]}.jpg" alt="" loading="lazy"><div class="cb"><span class="tm">${t[0]} · 🕒 ${t[3]}</span><h3>${x[0]}</h3><p class="ds">${x[1]}</p><div class="inc">${u.inc}${x[2]}</div><div class="pr">${same?`<div><small>${u.adult} / ${u.child}</small><b>${t[4]} USD</b></div>`:`<div><small>${u.adult}</small><b>${t[4]} USD</b></div><div><small>${u.child}</small><b>${t[5]} USD</b></div>`}</div><a class="b wa" href="${WA}?text=${encodeURIComponent(t[0]+" — "+x[0])}" target="_blank" rel="noopener" data-c="wa" data-w="${t[0]}">${u.book}</a></div></article>`}).join("");
+}
+document.addEventListener("click",e=>{
+const a=e.target.closest("[data-c]");if(a)track(a.dataset.c,a.dataset.w);
+const s=e.target.closest("#shopBtn");if(s)track("shop","ad-card");
+const l=e.target.closest(".lg");if(l){L=l.dataset.l;try{localStorage.setItem("lang",L)}catch(x){}render()}
+const k=e.target.closest(".chip");if(k){cat=k.dataset.k;render()}});
+function show(n){gi=(n+GAL.length)%GAL.length;$("#gi").src="images/"+GAL[gi]+".jpg"}
+function auto(){clearInterval(gt);gt=setInterval(()=>show(gi+1),2000)}
+$(".pv").onclick=()=>{show(gi-1);auto()};$(".nx").onclick=()=>{show(gi+1);auto()};
+$("#gi").onclick=()=>{$("#zoom img").src=$("#gi").src;$("#zoom").style.display="flex";clearInterval(gt)};
+$("#zoom").onclick=()=>{$("#zoom").style.display="none";auto()};
+render();show(0);auto();
+</script>
+</body>
+</html>
